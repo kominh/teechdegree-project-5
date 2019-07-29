@@ -1,0 +1,43 @@
+
+.headline--secondary {
+	font-weight: normal;
+
+}
+
+
+.headline--primary {
+	padding-left: 25px;
+	color: $headline_primary_color;
+
+		@include mq(medium) {
+
+			padding-left: 15px;
+			padding-bottom: 10px;
+			font-size: 22px;
+		}
+	}
+
+.link {
+	text-decoration: none;
+	font-weight: bold;
+	color: $link_color;
+		}	
+
+.blockquote {
+	font-weight: 400;
+	font-size: 22px;
+	padding-left: 20px;
+	border-left: 10px solid $blockquote_color;
+	border-bottom-left-radius: 10px;
+	border-top-left-radius: 10px; 
+
+			@include mq(medium) {
+				font-size: 16px;
+				margin-top: 40px;
+			}
+		}	
+
+			
+			
+
+	

@@ -1,0 +1,222 @@
+.container {
+	padding: 40px;
+
+		@include mq(medium) {
+
+			width: 80%;
+			margin: 0 auto;
+		
+	}
+
+}
+
+
+.grid__row {
+margin-top: 40px;
+		
+		@include mq(medium) {
+
+			justify-content: space-between;
+			max-width: 100%;
+			margin: 40 auto;
+				
+	}
+
+}
+
+
+.theme__colors {
+	align-items: center;
+}
+
+
+
+.grid__col--3,
+.grid__col--9,
+.grid__col--4,
+.form,
+.grid__col--6,
+.grid__col--12,
+.grid__col--5,
+.grid__col--7,
+.grid__col--8 {
+	@include flex-col
+
+
+}
+
+
+
+
+
+
+
+
+
+
+.grid__col--3.theme__colors {
+	color: $text_color;
+	background-color: $grid3_color;
+	align-items: center;
+	@include style;
+
+		@include mq(medium) {
+			flex-grow: 4;
+			margin: 5px;
+			
+		}
+	
+}
+
+.grid__col--4 {
+
+	margin-top: 2px;
+
+		@include mq(medium) {
+			margin-right: auto;
+			margin-left: auto;
+		}
+	
+				
+}					
+
+
+.grid__col--4.theme__colors {
+	color: $text_color;
+	background-color: $grid4_color;
+	@include style;
+
+		@include mq(medium) {
+				justify-content: space-around;
+				@include desktop-style
+				}
+	
+}
+
+.grid__col--5 {
+	color: $text_color;
+	background-color: $grid5_color;
+	@include style;
+
+			}
+
+
+
+
+@include mq(medium) {
+	.grid__col--6 {
+		margin: 0 auto;
+	}
+
+
+	.grid__row,
+	.grid__col--3,
+	.grid__col--4,
+	.grid__col--6,
+	.grid__col--8,
+	.grid__col--9,
+	.form,
+	.nav,
+	.theme__colors	 {
+		
+		@include flex-row
+
+	}
+
+	
+	.grid__col--5.theme__colors {
+							@include desktop-style
+
+							}
+	.grid__col--7.theme__colors.centered{
+	 	flex-grow: .5;
+		margin: auto;
+		margin-bottom: 5px;
+		margin-top: 5px;
+	}
+
+
+}
+
+
+.grid__col--6.theme__colors {
+	color: $text_color;
+	background-color: $grid6_color;
+	justify-content: space-between;
+	@include style;
+
+		@include mq(medium) {
+				justify-content: space-around;
+				@include desktop-style
+					}
+}
+
+.grid__col--7 {
+	color: $text_color;
+	background-color: $grid7_color;
+	@include style;
+
+		@include mq(medium) {
+			@include desktop-style2
+			}
+}
+
+
+
+.grid__col--8 {
+
+
+	@include mq(medium) {
+		max-width: 53%;
+	}	
+
+}
+
+
+
+
+
+.grid__col--8.theme__colors {
+	color: $text_color;
+	background-color: $grid8_color;
+	@include style;
+
+		@include mq(medium) {
+			justify-content: space-around;
+			@include desktop-style2
+
+			}	
+		}
+
+
+
+	
+	
+
+
+
+
+
+.grid__col--12.theme__colors {
+	color: $text_color;
+	background-color: $grid12_color;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	margin-top: 40px;
+	margin-bottom: 0px;
+	border-radius: 4px;
+
+			@include mq(medium) {
+				margin-bottom: 5px;
+				margin-top: 5px;
+				border-radius: 4px;
+
+			}
+
+	
+}
+
+
+
+
+

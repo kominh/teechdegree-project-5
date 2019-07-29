@@ -1,0 +1,88 @@
+
+
+.grid__col--4 .btn--default {
+		margin-top: 15px;
+		background-color: $default_color;
+		padding: 8px;
+		border-radius: 4px;
+		border: none;
+		color: white;
+
+		@media (min-width: $break_m) {
+				width: 100%;
+				align-self: center;
+				margin-top: 5px;
+
+
+		}
+	}	
+
+
+
+
+.grid__col--12 {
+
+			.btn--default,
+			.btn--success,
+			.btn--error,
+			.btn--warning,
+			.btn--info {
+				@include button-style;
+				
+			}
+
+			.btn--default.theme__colors {
+					background-color: $default_color;
+						
+						@include mq(medium) {
+
+							@include buttondesktop-style
+						}
+					}
+
+			.btn--success.theme__colors {
+					background-color: $success_color;
+						@include mq(medium) {
+
+							@include buttondesktop-style
+						}
+				
+			}
+
+			.btn--error.theme__colors {
+					background-color: $error_color;
+						@include mq(medium) {
+
+							@include buttondesktop-style
+						}
+			}
+
+			.btn--warning.theme__colors {
+					background-color: $warning_color;
+						@include mq(medium) {
+
+							@include buttondesktop-style
+						}
+			}
+
+			.btn--info.theme__colors {
+					background-color: $info_color;
+						@include mq(medium) {
+
+							@include buttondesktop-style
+						}
+
+			}
+
+			@include mq(medium) {
+					flex-direction: row;
+					flex-grow: 1;
+					margin-right: 5px;
+					margin-left: 5px;
+					margin-bottom: -15px;
+					margin-top: 5px;
+
+					
+				}
+			
+}

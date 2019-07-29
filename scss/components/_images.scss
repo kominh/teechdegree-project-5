@@ -1,0 +1,58 @@
+
+.img--logo {
+	width: 175px;
+
+		@include mq(medium) {
+			max-width: 100%;
+			margin-top: 20px;
+		}
+
+}
+
+
+.img--avatar {
+	@include image-avatar;
+
+		@include mq(medium) {
+			margin-right: auto;
+			max-width: 100%;
+			max-height: 100%;
+
+			
+
+		}
+				
+}
+
+
+
+.grid__col--4 .img--avatar {
+	@include mq(medium){
+	max-height: 100%;
+	max-width: 100%;
+	}
+}
+
+.img--frame {
+		align-self: center;
+		border: 1px solid gray;
+		max-width: 80%;
+		padding: 10px;
+		margin-top: 20px;
+
+
+		@include mq(medium) {
+					
+			max-width: 90%;
+			}
+
+}
+
+
+@include mq(medium) {
+	.grid__col--6 .img--avatar {
+		padding-right: 100px;
+		max-height: 100%;	
+		margin-right: 60px;
+		}
+}

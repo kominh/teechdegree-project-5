@@ -1,0 +1,50 @@
+
+
+
+.grid__col--9 {
+	
+	.nav {
+	margin-top: 20px;
+	padding: 20px;
+}
+	.nav a {
+	display: block;
+	color: $nav_color;
+	font-size: 1.125em;
+	font-weight: 300;
+	text-align: center;
+	padding: .8em;
+	text-decoration: none;
+}
+
+
+		@include mq(medium) {
+			padding-right: 0px;
+			padding-left: 50px;
+			margin: auto;
+	}
+
+
+				
+		.nav a:hover {
+			color: white;
+			background-color: $hover_color;
+			border-radius: 5px;
+			}
+
+
+
+		
+		.nav__item {
+			list-style-type: none;
+			max-width: 100%;
+			margin: auto;
+			
+
+				@include mq(medium) {
+					font-size: small;
+					
+				}
+
+			}
+		}
